@@ -1,0 +1,23 @@
+.mat-stepper-horizontal {
+    margin-top: 8px;
+  }
+  
+  .mat-form-field {
+    margin-top: 16px;
+  }
+  .header {
+    padding: 60px;
+    text-align: center;
+    background: #342b8d;
+    color: white;
+    font-size: 50px;
+    
+  }
+
+  .content-body{
+    min-width: 100%;
+    padding: 60px 1rem;
+    background: #7B68EE ;
+    display: block;
+
+  }
