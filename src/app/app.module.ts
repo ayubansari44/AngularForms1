@@ -7,7 +7,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button';
 
 
-import {MatDatepickerModule} from '@angular/material/datepicker'; 
+import {MatSelectModule} from '@angular/material/select'; 
+
+import {MatToolbarModule} from '@angular/material/toolbar'; 
+
 import {MatStepperModule} from '@angular/material/stepper'; 
 import { MatIconModule } from '@angular/material/icon';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -16,7 +19,10 @@ import { MatInputModule } from '@angular/material/input';
 import { LoginComponent } from './login/login.component';
 import {MatCardModule} from '@angular/material/card'; 
 import { MatTabsModule } from '@angular/material/tabs';
+import {MatCheckboxModule} from '@angular/material/checkbox'; 
 
+import {MatRadioModule} from '@angular/material/radio'; 
+import {MatListModule} from '@angular/material/list'; 
 
 @NgModule({
   declarations: [
@@ -35,6 +41,12 @@ import { MatTabsModule } from '@angular/material/tabs';
     MatFormFieldModule,
     MatInputModule,
     MatTabsModule,
+    MatCardModule,
+    MatToolbarModule,
+    MatCheckboxModule,
+    MatListModule,
+    MatRadioModule,
+    MatSelectModule
 
 
   ],

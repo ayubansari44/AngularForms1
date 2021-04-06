@@ -4,13 +4,16 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
-  {
-    path: '',
-    component: LoginComponent
-  },
+  
   {
     path:'',
-    component:AppComponent 
+    component:AppComponent,
+    children: [
+      {
+        path:'',
+        component: LoginComponent
+      }
+    ]
   }
   
 ];

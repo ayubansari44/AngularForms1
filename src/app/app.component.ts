@@ -1,9 +1,16 @@
 import { Component } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-
+import {FormControl} from '@angular/forms';
 import {MatButtonModule} from '@angular/material/button'; 
 import { MatSliderModule } from '@angular/material/slider';
+import {ThemePalette} from '@angular/material/core';
 
+export interface Task {
+  name: string;
+  completed: boolean;
+  color: ThemePalette;
+  subtasks?: Task[];
+}
 
 @Component({
   selector: 'app-root',
@@ -17,6 +24,10 @@ export class AppComponent {
   formGroup4: FormGroup;
   formGroup5: FormGroup;
   inOptional: boolean=false;
+
+  toppings = new FormControl();
+
+  toppingList: string[] = ['Extra cheese', 'Mushroom', 'Onion', 'Pepperoni', 'Sausage', 'Tomato'];
 
   constructor(private _formBuilder: FormBuilder){}
 
@@ -41,7 +52,8 @@ export class AppComponent {
         fiveCtlr: ['',Validators.required]
       }); 
     }
-  
 
+    
 
+    
 }

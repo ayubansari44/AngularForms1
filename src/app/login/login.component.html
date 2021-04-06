@@ -1,2 +1,54 @@
-<p>login works!</p>
-<h2>adlsfhkjladshfkjldshf</h2>
+<!-- <mat-card>
+    <mat-card-content>
+        <div class="header">
+            <h2>LOGIN</h2>
+        </div>
+        <form (ngSubmit)="onLogin()" name="loginForm" [formGroup]="loginForm">
+        <div class="email-input">
+            <mat-form-field class="full-width" appearance="outline">
+                <mat-label>Email</mat-label>
+                <input formControlName="email" matInput required />
+                <mat-error *ngIf="loginForm.get('email').errors?.required">
+                    Require Email Address
+                </mat-error>
+                </mat-form-field>
+        </div>
+
+        <div>
+            <span class="aLink">Forgot Password</span>
+            <mat-form-field class="full-width" appearance="ontline">
+                <mat-label>Password</mat-label>
+                <input formControlName="password" matInput [type]="hided ? 'password': 'text'" required />
+                <button mat-icon-button matSuffix (click)="hide=!hide"
+                [attr.aria-label]="'Hide Password'" [attr.aira-pressed]="hide">
+                <mat-icon>
+                    {{hide ? 'visibility_off': 'visibility'}}
+                </mat-icon>
+            </button>
+
+            <mat-error *ngIf="loginForm.get('password').errors ?.required">
+                Required Password
+            </mat-error>
+
+            </mat-form-field>
+        </div>
+        <button mat-flat-button color="primary">Login</button>
+    </form>
+    </mat-card-content>
+</mat-card> -->
+<h1 class="text-center">
+    Welcome to Login Page
+</h1>
+<form>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input type="email" class="form-control" name="email" [(ngModel)]="email">
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+      <input type="password" class="form-control" name="password" [(ngModel)]="password"> 
+    </div>
+ 
+    <button type="submit" class="btn btn-primary" (click)="LoginUser()">Submit</button>
+  </form>
